@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://use.typekit.net/hbw4pxs.css?v=2">
+<script src="./image-slot.js"></script>
+<style>
+@font-face{font-family:'All Round Gothic';src:url("https://use.typekit.net/af/0c7681/00000000000000007735c472/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'All Round Gothic';src:url("https://use.typekit.net/af/330fa1/00000000000000007735c477/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2");font-style:italic;font-weight:400;font-display:swap}
+@font-face{font-family:'All Round Gothic';src:url("https://use.typekit.net/af/a4ad37/00000000000000007735c481/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:'All Round Gothic';src:url("https://use.typekit.net/af/52fec6/00000000000000007735c483/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2");font-style:italic;font-weight:700;font-display:swap}
+@font-face{font-family:'Avenir';src:url("https://use.typekit.net/af/190637/0000000000000000775aa878/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Avenir';src:url("https://use.typekit.net/af/8fb772/0000000000000000775aa871/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2");font-style:italic;font-weight:400;font-display:swap}
+@font-face{font-family:'Avenir';src:url("https://use.typekit.net/af/434a93/0000000000000000775aa877/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:'Avenir';src:url("https://use.typekit.net/af/94655f/0000000000000000775aa870/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2");font-style:italic;font-weight:700;font-display:swap}
+@font-face{font-family:'Maku';src:url('assets/Maku-Regular.ttf') format('truetype');font-weight:100 500;font-display:swap}
+@font-face{font-family:'Maku';src:url('assets/Maku-Bold.ttf') format('truetype');font-weight:600 900;font-display:swap}
+body{margin:0;background:#F6F6F6;color:#2b0a08;font-family:'avenir-lt-pro','avenir-next-lt-pro','Avenir','Avenir Next','Maku',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}a:hover{color:#8a2e2a}
+*{box-sizing:border-box}
+@keyframes kissa-bar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+</style>
+<template id="__bundler_thumbnail" data-bg-color="#8a2e2a"><svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><text x="600" y="470" text-anchor="middle" font-family="Avenir,sans-serif" font-size="200" letter-spacing="40" fill="#fef3d6">KISSA</text></svg></template>
+</helmet>
+<div style="background:#F6F6F6">
+  <div style="position:sticky;top:-37px;z-index:30;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transform:{{ navY }};opacity:{{ navOpacity }};pointer-events:{{ navPE }};transition:transform .4s ease,opacity .3s ease">
+  <div style="color: #fef3d6; min-height: 37px; display: flex; align-items: center; overflow: hidden; white-space: nowrap; font: 500 14px 'all-round-gothic','avenir-lt-pro',sans-serif; letter-spacing: 0.07em; text-transform: uppercase; background-color: #681B18D2">
+    <div style="display:flex;width:max-content;animation:kissa-bar 40s linear infinite">
+      <div style="display:flex;align-items:center;gap:36px;padding-right:36px;flex-shrink:0">
+        <span>Hand made</span><span style="font-size:10px">✦</span>
+        <span>Part of your story</span><span style="font-size:10px">✦</span>
+        <span>Made slowly</span><span style="font-size:10px">✦</span>
+        <span>Every pocket has a plot twist</span><span style="font-size:10px">✦</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:36px;padding-right:36px;flex-shrink:0">
+        <span>Hand made</span><span style="font-size:10px">✦</span>
+        <span>Part of your story</span><span style="font-size:10px">✦</span>
+        <span>Made slowly</span><span style="font-size:10px">✦</span>
+        <span>Every pocket has a plot twist</span><span style="font-size:10px">✦</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:36px;padding-right:36px;flex-shrink:0">
+        <span>Hand made</span><span style="font-size:10px">✦</span>
+        <span>Part of your story</span><span style="font-size:10px">✦</span>
+        <span>Made slowly</span><span style="font-size:10px">✦</span>
+        <span>Every pocket has a plot twist</span><span style="font-size:10px">✦</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:36px;padding-right:36px;flex-shrink:0">
+        <span>Hand made</span><span style="font-size:10px">✦</span>
+        <span>Part of your story</span><span style="font-size:10px">✦</span>
+        <span>Made slowly</span><span style="font-size:10px">✦</span>
+        <span>Every pocket has a plot twist</span><span style="font-size:10px">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <header style="position: relative; z-index: 20; background: {{ headerBg }}; transition: background .35s ease; overflow: scroll" onMouseLeave="{{ closeMenu }}">
+    
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="position:absolute;left:0;right:0;top:100%;background:#E8F0F7;border-bottom:1px solid #4d0b09">
+        <div style="max-width:1440px;margin:0 auto;padding:36px clamp(20px,4vw,56px) 44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:32px">
+          <sc-for list="{{ menuCols }}" as="col" hint-placeholder-count="3">
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="font:500 11px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#8a2e2a">{{ col.title }}</div>
+              <sc-for list="{{ col.links }}" as="l" hint-placeholder-count="4">
+                <a href="#" style="font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-size:22px;line-height:1.2;color:#4d0b09">{{ l }}</a>
+              </sc-for>
+            </div>
+          </sc-for>
+          <div style="position:relative;aspect-ratio:4/3;overflow:hidden">
+            <image-slot id="v5-menu" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" src="assets/v3-p1.png" placeholder="Menu feature image"></image-slot>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+  <div style="max-width: none; margin: 0; padding: 0 clamp(20px,3vw,40px); display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; gap: 20px; height: 86px; overflow: visible; width: 100%">
+      <nav style="display: flex; flex-wrap: wrap; column-gap: clamp(12px,1.6vw,28px); row-gap: 0; font: 500 clamp(10px,0.85vw,12px) 'avenir-lt-pro','Avenir',sans-serif; letter-spacing: clamp(.08em,.4vw,.2em); text-transform: uppercase; color: #4d0b09; position: relative; white-space: nowrap">
+        
+        
+        
+        
+      <a href="#new" onMouseEnter="{{ openMenu }}" style="padding: 12px 0; overflow: visible; text-align: left; border-radius: 0px; flex-grow: 0; position: static; z-index: 0; width: 94px; height: 51px; font-size: 18px; letter-spacing: 3.5px; color: #FEF3D6; font-weight: 600; font-family: Avenir; display: inline-block; transition: transform .2s ease, text-shadow .2s ease" style-hover="text-shadow: 3px 3px 3px #395F6D8C; transform: translateY(-3px); color: #FEF3D6">NEW IN</a><a href="#new" onMouseEnter="{{ openMenu }}" style="padding: 12px 0; overflow: visible; text-align: left; border-radius: 0px; flex-grow: 0; position: static; z-index: 0; width: 170px; height: auto; font-size: 18px; letter-spacing: 3.5px; color: #FEF3D6; font-weight: 600; font-family: Avenir; display: inline-block; transition: transform .2s ease, text-shadow .2s ease" style-hover="text-shadow: 3px 3px 3px #395F6D8C; transform: translateY(-3px); color: #FEF3D6">CRAFT</a></nav><a href="#" onClick="{{ goHome }}" aria-label="Kissa home" style="display: flex; align-items: center; justify-content: center; font-family: Maku; font-weight: 900; font-size: 53px; line-height: 1.8; color: #FEF3D6; text-shadow: 0 2px 6px rgba(43,10,8,.45), 0 1px 2px rgba(43,10,8,.35); padding-top: 1px; width: 135px; height: 38px; text-align: center; z-index: 1; position: relative; cursor: pointer" style-hover="color:#FEF3D6">किस्सा</a>
+      
+      <nav style="display:flex;justify-content:flex-end;align-items:center;gap:clamp(8px,1.4vw,22px);white-space:nowrap">
+        <a href="#" aria-label="Find a store" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #FEF3D6; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #FEF3D6"></a>
+        <a href="#" aria-label="Search" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #FEF3D6; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #FEF3D6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4.2-4.2"></path></svg></a>
+        <a href="#" aria-label="Login" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #FEF3D6; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #FEF3D6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 20.5c1.2-3.8 4-5.5 7.5-5.5s6.3 1.7 7.5 5.5"></path></svg></a>
+        <a href="#" aria-label="Wishlist" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #FEF3D6; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #FEF3D6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h11v17l-5.5-4-5.5 4z"></path></svg></a>
+        <a href="#" aria-label="Bag" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #FEF3D6; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #FEF3D6"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12.5H6z"></path><path d="M9 8V6.5a3 3 0 0 1 6 0V8"></path></svg><span style="position:absolute;top:2px;right:0;min-width:18px;height:18px;padding:0 4px;border-radius:9px;background:#E8F0F7;color:#4d0b09;font:700 11px 'Avenir',sans-serif;display:flex;align-items:center;justify-content:center">{{ bagCount }}</span></a><a href="#" aria-label="Menu" style="display: flex; align-items: center; justify-content: center; width: 72px; height: 44px; border-radius: 22px; background: rgba(254,243,214,.22); color: #FEF3D6; transition: transform .2s ease, filter .2s ease; text-align: right; line-height: 2" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #FEF3D6"><svg width="30" height="16" viewBox="0 0 30 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h24"></path><path d="M3 12h24"></path></svg></a>
+        
+      </nav>
+    </div></header>
+  <div aria-hidden="true" style="position: absolute; top: 100%; left: 0; width: 32px; height: 32px; pointer-events: none; background: radial-gradient(circle at 100% 100%, transparent 31.5px, {{ headerBg }} 32px); opacity: 1"></div><div aria-hidden="true" style="position: absolute; top: 100%; left: 0; width: 32px; height: 32px; pointer-events: none; background: radial-gradient(circle at 100% 100%, transparent 31.5px, {{ headerBg }} 32px); opacity: 1"></div>
+  <div aria-hidden="true" style="position:absolute;top:100%;right:0;width:32px;height:32px;pointer-events:none;background:radial-gradient(circle at 0 100%, transparent 31.5px, {{ headerBg }} 32px)"></div>
+  </div>
+
+  <section data-screen-label="Hero" style="position:relative;margin-top:-123px;height:calc(min(86vh,820px) + 123px);min-height:540px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+    <sc-for list="{{ slides }}" as="s" hint-placeholder-count="1">
+      <a href="#new" style="position:absolute;inset:0;display:block;opacity:{{ s.opacity }};transition:opacity .9s ease;pointer-events:{{ s.pe }};background:{{ s.bg }}">
+        <div style="position:absolute;top:0;right:0;bottom:0;width:{{ s.imgW }};-webkit-mask-image:{{ s.fade }};mask-image:{{ s.fade }}">
+          <image-slot id="{{ s.slot }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" src="{{ s.img }}" placeholder="{{ s.ph }}"></image-slot>
+        </div>
+        
+      </a>
+    </sc-for>
+  <div style="position:relative;max-width:1440px;height:100%;margin:0 auto;padding:0 clamp(20px,4vw,56px) clamp(48px,7vh,80px);display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;gap:14px;color:#8a2e2a;pointer-events:none">
+    
+    <h1 style="margin: 0; font-family: 'All Round Gothic','Avenir',sans-serif; font-weight: 700; font-size: 48px; line-height: 0.92; max-width: 14.72ch; text-wrap: balance; color: #90302C; text-align: left; letter-spacing: -1.4px; height: 66px; width: 547px; align-self: stretch; text-shadow: 0 1px 0 rgba(254,243,214,.55), 0 2px 14px rgba(254,243,214,.55), 0 4px 18px rgba(43,10,8,.18); z-index: o; position: static; margin-top: 16px; margin-right: -5px; margin-bottom: -70px; margin-left: -33px">India's</h1><h1 style="margin: 0; font-family: 'All Round Gothic','Avenir',sans-serif; font-weight: 700; font-size: 160px; line-height: 1.22; max-width: 14ch; text-wrap: balance; color: #90302C; letter-spacing: 4.1px; text-shadow: 0 1px 0 rgba(254,243,214,.55), 0 2px 14px rgba(254,243,214,.55), 0 4px 18px rgba(43,10,8,.18); width: 568px; height: 127px; text-align: left; margin-top: 5px; margin-bottom: 6px; margin-left: -42px; margin-right: -42px; z-index: 0">Craft</h1><h1 style="margin: 0; font-family: 'All Round Gothic','Avenir',sans-serif; font-weight: 700; font-size: clamp(24px, 3.4vw, 48px); line-height: 0.92; color: #90302C; text-align: left; letter-spacing: -1.4px; align-self: flex-start; text-shadow: 0 1px 0 rgba(254,243,214,.55), 0 2px 14px rgba(254,243,214,.55), 0 4px 18px rgba(43,10,8,.18); z-index: o; position: static; margin-top: 16px; margin-right: -5px; margin-bottom: 2px; margin-left: -23px; min-width: 47px; white-space: nowrap; width: auto; height: auto; max-width: none">looks good on you.</h1><a href="#new" style="pointer-events: auto; margin-top: 6px; display: inline-flex; align-items: center; gap: 12px; padding: 14px 28px; border-radius: 1025px; background: rgba(254,243,214,.18); border: 1px solid rgba(254,243,214,.45); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-family: Avenir; font-weight: 900; font-size: 14px; letter-spacing: 2.6px; text-transform: uppercase; color: #016CA4; transition: transform .2s ease, text-shadow .2s ease; line-height: 1.5; margin-left: -24px" style-hover="text-shadow: 3px 3px 3px #395F6D8C; transform: translateY(-3px); color: #FEF3D6; background: rgba(254,243,214,.28)">Find your story <span>→</span></a>
+    
+  </div></section>
+
+  
+  <section data-screen-label="Shop the looks" style="background:#f6f6f6">
+    
+    <div style="max-width: none; padding: clamp(10px,1vw,14px) clamp(20px,2.4vw,36px); display: flex; justify-content: space-between; align-items: baseline; gap: 16px; height: 35px; width: 1545px">
+      <h2 style="margin: 0; font: 600 clamp(17px,1.3vw,21px) 'Avenir',sans-serif; color: #90302C; font-family: All Round Gothic; font-weight: 100; line-height: 0; letter-spacing: 1.7px; text-transform: none">Drop SS27'</h2>
+      <a href="#new" style="display: inline-flex; padding: 9px 22px; border-radius: 999px; background: #ffffff; color: #90302C; font: 500 clamp(14px,1vw,16px) 'Avenir',sans-serif; transition: transform .2s ease; text-align: center; align-items: baseline" style-hover="color:#1a1a1a;transform:translateY(-1px)">Discover more</a>
+    </div>
+  </section>
+  <sc-if value="{{ lookOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeLook }}" style="position:fixed;inset:0;z-index:100;background:rgba(43,10,8,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:clamp(12px,3vw,40px)">
+      <div onClick="{{ stopClick }}" style="position:relative;width:100%;max-width:1080px;max-height:calc(100vh - 48px);overflow:auto;background:#E8F0F7;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));box-shadow:0 40px 80px rgba(43,10,8,.4)">
+        <button onClick="{{ closeLook }}" aria-label="Close" style="position:absolute;top:14px;right:14px;z-index:3;width:44px;height:44px;border-radius:50%;border:1px solid #4d0b09;background:#E8F0F7;color:#4d0b09;font-size:22px;line-height:1;cursor:pointer" style-hover="background:#4d0b09;color:#fef3d6">×</button>
+        <div style="position:relative;aspect-ratio:4/5;background:#e8dcc0">
+          <image-slot id="{{ look.slot }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" src="{{ look.img }}" placeholder="{{ look.ph }}"></image-slot>
+          <div style="position:absolute;right:20px;bottom:20px;width:38%;aspect-ratio:1/1;border-radius:50%;overflow:hidden;border:4px solid #fef3d6;box-shadow:0 14px 30px rgba(43,10,8,.35);background:#f3e6c4">
+            <image-slot id="{{ look.zslot }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" src="{{ look.zimg }}" placeholder="Pocket close-up"></image-slot>
+          </div>
+        </div>
+        <div style="padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;gap:18px;justify-content:center">
+          <div style="font:700 12px 'Avenir',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#8a2e2a">{{ look.code }} · {{ look.persona }}</div>
+          <h3 style="margin:0;font-family:'All Round Gothic','Avenir',sans-serif;font-weight:700;font-size:clamp(28px,3vw,42px);line-height:1.04;color:#4d0b09">{{ look.title }}</h3>
+          <p style="margin:0;font:400 16px/1.65 'Avenir',sans-serif;color:#4a2a14;text-wrap:pretty">{{ look.story }}</p>
+          <div style="display:flex;flex-direction:column;gap:4px;border-top:1px solid rgba(77,11,9,.2);padding-top:14px">
+            <span style="font:700 11px 'Avenir',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#8a2e2a">In the pocket</span>
+            <span style="font:400 15px/1.55 'Avenir',sans-serif;color:#2b0a08">{{ look.pocket }}</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid rgba(77,11,9,.2);padding-top:14px">
+            <span style="font:500 17px 'Avenir',sans-serif;color:#2b0a08">{{ look.name }}</span>
+            <span style="font:500 17px 'Avenir',sans-serif;color:#2b0a08">{{ look.price }}</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px">
+            <sc-for list="{{ lookSizes }}" as="sz" hint-placeholder-count="5">
+              <button onClick="{{ sz.pick }}" style="border:1px solid #4d0b09;background:{{ sz.bg }};color:{{ sz.ink }};padding:12px 0;font:600 13px 'Avenir',sans-serif;cursor:pointer">{{ sz.label }}</button>
+            </sc-for>
+          </div>
+          <button onClick="{{ addLook }}" style="border:0;border-radius:999px;background:#4d0b09;color:#fef3d6;padding:16px 28px;font:600 13px 'Avenir',sans-serif;letter-spacing:3px;text-transform:uppercase;cursor:pointer;opacity:{{ addOpacity }};transition:transform .2s ease" style-hover="transform:translateY(-2px)">{{ addLabel }}</button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  
+
+
+  <sc-if value="{{ pdpOpen }}" hint-placeholder-val="{{ false }}">
+    <div ref="{{ pdpRef }}" style="position:fixed;inset:0;z-index:90;background:#F6F6F6;overflow-y:auto">
+      <div style="position:sticky;top:0;z-index:5;background:rgba(246,246,246,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(77,11,9,.08)">
+      <header style="position: relative; z-index: 20; background: transparent">
+    
+    
+  <div style="max-width: none; margin: 0; padding: 0 clamp(20px,3vw,40px); display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; gap: 20px; height: 86px; overflow: visible; width: 100%">
+      <nav style="display: flex; flex-wrap: wrap; column-gap: clamp(12px,1.6vw,28px); row-gap: 0; font: 500 clamp(10px,0.85vw,12px) 'avenir-lt-pro','Avenir',sans-serif; letter-spacing: clamp(.08em,.4vw,.2em); text-transform: uppercase; color: #4d0b09; position: relative; white-space: nowrap">
+        
+        
+        
+        
+      <a href="#new" onClick="{{ closePdp }}" style="padding: 12px 0; overflow: visible; text-align: left; border-radius: 0px; flex-grow: 0; position: static; z-index: 0; width: 94px; height: 51px; font-size: 18px; letter-spacing: 3.5px; color: #4d0b09; font-weight: 600; font-family: Avenir; display: inline-block; transition: transform .2s ease, text-shadow .2s ease" style-hover="text-shadow: 3px 3px 3px #395F6D8C; transform: translateY(-3px); color: #4d0b09">NEW IN</a><a href="#new" onClick="{{ closePdp }}" style="padding: 12px 0; overflow: visible; text-align: left; border-radius: 0px; flex-grow: 0; position: static; z-index: 0; width: 170px; height: auto; font-size: 18px; letter-spacing: 3.5px; color: #4d0b09; font-weight: 600; font-family: Avenir; display: inline-block; transition: transform .2s ease, text-shadow .2s ease" style-hover="text-shadow: 3px 3px 3px #395F6D8C; transform: translateY(-3px); color: #4d0b09">CRAFT</a></nav><a href="#" onClick="{{ goHome }}" aria-label="Kissa home" style="display: flex; align-items: center; justify-content: center; font-family: Maku; font-weight: 900; font-size: 53px; line-height: 1.8; color: #4d0b09; padding-top: 1px; width: 135px; height: 38px; text-align: center; z-index: 1; position: relative; cursor: pointer" style-hover="color:#4d0b09">किस्सा</a>
+      
+      <nav style="display:flex;justify-content:flex-end;align-items:center;gap:clamp(8px,1.4vw,22px);white-space:nowrap">
+        <a href="#" aria-label="Find a store" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #4d0b09; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #4d0b09"></a>
+        <a href="#" aria-label="Search" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #4d0b09; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #4d0b09"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4.2-4.2"></path></svg></a>
+        <a href="#" aria-label="Login" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #4d0b09; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #4d0b09"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 20.5c1.2-3.8 4-5.5 7.5-5.5s6.3 1.7 7.5 5.5"></path></svg></a>
+        <a href="#" aria-label="Wishlist" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #4d0b09; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #4d0b09"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h11v17l-5.5-4-5.5 4z"></path></svg></a>
+        <a href="#" aria-label="Bag" style="position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: #4d0b09; transition: transform .2s ease, filter .2s ease" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #4d0b09"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12.5H6z"></path><path d="M9 8V6.5a3 3 0 0 1 6 0V8"></path></svg><span style="position:absolute;top:2px;right:0;min-width:18px;height:18px;padding:0 4px;border-radius:9px;background:#4d0b09;color:#fef3d6;font:700 11px 'Avenir',sans-serif;display:flex;align-items:center;justify-content:center">{{ bagCount }}</span></a><a href="#" aria-label="Menu" style="display: flex; align-items: center; justify-content: center; width: 72px; height: 44px; border-radius: 22px; background: rgba(77,11,9,.08); color: #4d0b09; transition: transform .2s ease, filter .2s ease; text-align: right; line-height: 2" style-hover="filter: drop-shadow(3px 3px 3px #395F6D8C); transform: translateY(-3px); color: #4d0b09"><svg width="30" height="16" viewBox="0 0 30 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 4h24"></path><path d="M3 12h24"></path></svg></a>
+        
+      </nav>
+    </div></header>
+      </div>
+      <div style="padding:12px clamp(12px,1.2vw,20px) 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(320px,1fr);gap:12px;align-items:start">
+        <div style="position:sticky;top:98px;height:calc(100vh - 110px);min-height:480px;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+          <image-slot id="{{ pdpMain.slot }}" src="{{ pdpMain.src }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="{{ pdpMain.ph }}"></image-slot>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <sc-for list="{{ pdpAngles }}" as="t" hint-placeholder-count="4">
+            <div style="position:relative;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+              <image-slot id="{{ t.slot }}" src="{{ t.src }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="{{ t.ph }}"></image-slot>
+            </div>
+          </sc-for>
+        </div>
+        <div style="position:sticky;top:98px;min-height:calc(100vh - 110px);display:flex;flex-direction:column;justify-content:space-between;gap:16px;padding:0 8px 0 20px">
+          <div style="display:flex;gap:16px;align-items:stretch;padding-top:8px">
+            
+            <div style="flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:6px">
+              <span style="font:500 11px 'Avenir',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#8a2e2a">The pocket · Drop SS27</span>
+              <span style="font-family:'Maku',sans-serif;font-weight:700;font-size:clamp(28px,2.4vw,38px);line-height:1.15;color:#4d0b09">{{ pdpPocket.hi }}</span>
+              <span style="font:400 15px/1.6 'Avenir',sans-serif;color:#4a2a14;text-wrap:pretty;max-width:44ch">Every pocket is hand-painted, so the piece you receive will be slightly different from the one you see here. No two are ever the same.</span>
+              <a href="#pdp-story" onClick="{{ toStory }}" style="align-self:flex-start;font:500 13px 'Avenir',sans-serif;color:#8a2e2a;text-decoration:underline;text-underline-offset:3px">Read her story ↓</a>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+          <div style="background:#E8F0F7;border:1px solid rgba(77,11,9,.12);border-radius:18px;padding:22px 16px 16px;display:flex;flex-direction:column;gap:18px">
+            <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px">
+              <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+                <div style="display:flex;align-items:center;gap:6px">
+                  <h2 style="margin:0;font:600 21px 'Avenir',sans-serif;color:#2b0a08">{{ pdp.name }}</h2>
+                  <button onClick="{{ pdpSave }}" aria-label="Save" style="width:32px;height:32px;border:0;background:transparent;color:{{ pdpMarkInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0"><svg width="18" height="22" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+                </div>
+                <span style="font:400 18px 'Avenir',sans-serif;color:#6b4a30">{{ pdp.price }}</span>
+              </div>
+              <a href="#new" style="flex:0 0 auto;padding:6px 14px;border-radius:4px;background:rgba(77,11,9,.08);font:500 14px 'Avenir',sans-serif;color:#2b0a08">Size Guide</a>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px">
+              <sc-for list="{{ pdpSizes }}" as="sz" hint-placeholder-count="9">
+                <button onClick="{{ sz.pick }}" style="height:52px;border-radius:999px;border:1px solid {{ sz.line }};background:{{ sz.bg }};color:{{ sz.ink }};font:500 15px 'Avenir',sans-serif;text-decoration:{{ sz.deco }};cursor:{{ sz.cursor }};transition:background .15s ease,color .15s ease">{{ sz.label }}</button>
+              </sc-for>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <button onClick="{{ pdpAdd }}" style="height:60px;border-radius:999px;border:1px solid rgba(77,11,9,.25);background:#E8F0F7;color:#2b0a08;font:500 14px 'Avenir',sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer" style-hover="border-color:#4d0b09">{{ pdpAddLabel }}</button>
+              <button onClick="{{ pdpAdd }}" style="height:60px;border-radius:999px;border:0;background:#4d0b09;color:#fef3d6;font:500 14px 'Avenir',sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer" style-hover="background:#2b0a08">Buy now</button>
+            </div>
+            <sc-if value="{{ pdpNeedSize }}" hint-placeholder-val="{{ false }}">
+              <span style="margin-top:-6px;font:400 13px 'Avenir',sans-serif;color:#8a2e2a;text-align:center">Pick a size first</span>
+            </sc-if>
+          </div>
+          <div style="background:#E8F0F7;border:1px solid rgba(77,11,9,.12);border-radius:18px;padding:8px 16px 26px;display:flex;flex-direction:column;gap:22px">
+            <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr))">
+              <sc-for list="{{ pdpTabs }}" as="tb" hint-placeholder-count="3">
+                <button onClick="{{ tb.pick }}" style="height:56px;border:0;border-bottom:3px solid {{ tb.line }};background:transparent;color:{{ tb.ink }};font:500 16px 'Avenir',sans-serif;cursor:pointer;padding:0 4px">{{ tb.title }}</button>
+              </sc-for>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;padding:0 40px">
+              <sc-for list="{{ pdpTabBody }}" as="ln" hint-placeholder-count="3">
+                <span style="font:400 16px/1.5 'Avenir',sans-serif;color:#4a2a14">{{ ln.t }}</span>
+              </sc-for>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="pdp-story" style="padding:clamp(72px,8vw,120px) clamp(12px,1.2vw,20px) 0;display:flex;flex-direction:column;gap:clamp(56px,6vw,96px)">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:24px clamp(32px,5vw,96px);align-items:end;padding:0 clamp(8px,1vw,16px)">
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <span style="font:500 11px 'Avenir',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#8a2e2a">The story of</span>
+            <span style="font-family:'Maku',sans-serif;font-weight:700;font-size:clamp(56px,6vw,96px);line-height:1.1;color:#8a2e2a">{{ pdpPocket.hi }}</span>
+            <h2 style="margin:0;font-family:'All Round Gothic','Avenir',sans-serif;font-weight:400;font-size:clamp(32px,3.4vw,52px);line-height:1;color:#4d0b09">{{ pdp.name }}</h2>
+          </div>
+          <p style="margin:0;max-width:52ch;font:400 18px/1.7 'Avenir',sans-serif;color:#4a2a14;text-wrap:pretty">Placeholder — Manmohini is the one who holds the mirror. In Cheriyal scrolls she appears when the story pauses to look at itself. We took her back to the village she came from, and shot her where the paint is mixed.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <span style="font:500 11px 'Avenir',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#8a2e2a;padding:0 clamp(8px,1vw,16px)">Shot in the village</span>
+          <div style="position:relative;aspect-ratio:21/9;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;min-height:320px"><image-slot id="{{ pdpStory.id }}-rural-wide" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Rural shoot — wide, model in the village"></image-slot></div>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px">
+            <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;"><image-slot id="{{ pdpStory.id }}-rural-1" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Rural shoot — portrait"></image-slot></div>
+            <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;"><image-slot id="{{ pdpStory.id }}-rural-2" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Rural shoot — detail / pocket in light"></image-slot></div>
+            <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;"><image-slot id="{{ pdpStory.id }}-rural-3" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Rural shoot — model with locals"></image-slot></div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:12px;align-items:stretch">
+          <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;"><image-slot id="{{ pdpStory.id }}-artist" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="The artist at work"></image-slot></div>
+          <div style="display:flex;flex-direction:column;justify-content:space-between;gap:32px;padding:clamp(24px,3vw,48px);border-radius:16px;background:#4d0b09;color:#fef3d6">
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <span style="font:500 11px 'Avenir',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#f1c9a0">Meet the artist</span>
+              <h3 style="margin:0;font-family:'All Round Gothic','Avenir',sans-serif;font-weight:400;font-size:clamp(30px,3vw,46px);line-height:1.04">Artist name</h3>
+              <p style="margin:0;max-width:46ch;font:400 17px/1.7 'Avenir',sans-serif;color:#f1e4c4;text-wrap:pretty">Placeholder — a third-generation Nakashi painter from Cheriyal. Two short lines about how they learned, and what Manmohini means to them.</p>
+            </div>
+            <span style="font:400 14px 'Avenir',sans-serif;color:#f1c9a0">Cheriyal, Telangana · 14 hours per pocket</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:24px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding:0 clamp(8px,1vw,16px)">
+            <h3 style="margin:0;font-family:'All Round Gothic','Avenir',sans-serif;font-weight:400;font-size:30px;color:#4d0b09">How she's made</h3>
+            <span style="font:500 11px 'Avenir',sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#8a2e2a">Four steps · One pair of hands</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px">
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;"><image-slot id="{{ pdpStory.id }}-make-01" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Making — Sketch"></image-slot></div>
+              <div style="display:flex;flex-direction:column;gap:6px;padding:0 12px">
+                <span style="font:500 13px 'Avenir',sans-serif;letter-spacing:.14em;color:#8a2e2a">01 · SKETCH</span>
+                <span style="font:400 15px/1.6 'Avenir',sans-serif;color:#4a2a14;text-wrap:pretty">The artist draws Manmohini freehand, straight onto the pocket.</span>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;"><image-slot id="{{ pdpStory.id }}-make-02" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Making — Colour"></image-slot></div>
+              <div style="display:flex;flex-direction:column;gap:6px;padding:0 12px">
+                <span style="font:500 13px 'Avenir',sans-serif;letter-spacing:.14em;color:#8a2e2a">02 · COLOUR</span>
+                <span style="font:400 15px/1.6 'Avenir',sans-serif;color:#4a2a14;text-wrap:pretty">Natural pigments, mixed by hand, laid in one shade at a time.</span>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;"><image-slot id="{{ pdpStory.id }}-make-03" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Making — Outline"></image-slot></div>
+              <div style="display:flex;flex-direction:column;gap:6px;padding:0 12px">
+                <span style="font:500 13px 'Avenir',sans-serif;letter-spacing:.14em;color:#8a2e2a">03 · OUTLINE</span>
+                <span style="font:400 15px/1.6 'Avenir',sans-serif;color:#4a2a14;text-wrap:pretty">A fine black line brings her face and jewellery to life.</span>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;"><image-slot id="{{ pdpStory.id }}-make-04" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Making — Stitch"></image-slot></div>
+              <div style="display:flex;flex-direction:column;gap:6px;padding:0 12px">
+                <span style="font:500 13px 'Avenir',sans-serif;letter-spacing:.14em;color:#8a2e2a">04 · STITCH</span>
+                <span style="font:400 15px/1.6 'Avenir',sans-serif;color:#4a2a14;text-wrap:pretty">The finished pocket is sewn onto the shirt in our studio.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding:clamp(48px,5vw,72px) clamp(20px,2vw,36px) 0;display:flex;flex-direction:column;gap:24px">
+        <h3 style="margin:0;font-family:'All Round Gothic','Avenir',sans-serif;font-weight:400;font-size:30px;color:#4d0b09">You may also like</h3>
+        <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px">
+            <sc-for list="{{ pdpLike }}" as="lk" hint-placeholder-count="4">
+              <article style="display:flex;flex-direction:column;gap:12px;min-width:0">
+                <div onClick="{{ lk.open }}" style="position:relative;aspect-ratio:4/5;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+                  <image-slot id="{{ lk.slot }}" src="{{ lk.src }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none" placeholder="{{ lk.name }}"></image-slot>
+                  <button onClick="{{ lk.save }}" aria-label="Save" style="position:absolute;top:12px;right:12px;width:44px;height:44px;border:0;background:transparent;color:{{ lk.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0"><svg width="18" height="22" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:4px;padding:0 12px">
+                  <span style="font:500 15px 'Avenir',sans-serif;color:#2b0a08">{{ lk.name }}</span>
+                  <span style="font:500 14px 'Avenir',sans-serif;color:#2b0a08">{{ lk.price }}</span>
+                </div>
+              </article>
+            </sc-for>
+        </div>
+      </div>
+      <sc-if value="{{ hasRecent }}" hint-placeholder-val="{{ false }}">
+        <div style="padding:clamp(48px,5vw,72px) clamp(20px,2vw,36px) clamp(64px,6vw,96px);display:flex;flex-direction:column;gap:24px">
+          <h3 style="margin:0;font-family:'All Round Gothic','Avenir',sans-serif;font-weight:400;font-size:30px;color:#4d0b09">Recently visited</h3>
+          <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px">
+            <sc-for list="{{ pdpRecent }}" as="rc" hint-placeholder-count="4">
+              <article style="display:flex;flex-direction:column;gap:12px;min-width:0">
+                <div onClick="{{ rc.open }}" style="position:relative;aspect-ratio:4/5;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+                  <image-slot id="{{ rc.slot }}" src="{{ rc.src }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none" placeholder="{{ rc.name }}"></image-slot>
+                  <button onClick="{{ rc.save }}" aria-label="Save" style="position:absolute;top:12px;right:12px;width:44px;height:44px;border:0;background:transparent;color:{{ rc.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0"><svg width="18" height="22" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:4px;padding:0 12px">
+                  <span style="font:500 15px 'Avenir',sans-serif;color:#2b0a08">{{ rc.name }}</span>
+                  <span style="font:500 14px 'Avenir',sans-serif;color:#2b0a08">{{ rc.price }}</span>
+                </div>
+              </article>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+      <div style="padding:clamp(56px,6vw,96px) clamp(12px,1.2vw,20px) clamp(12px,1.2vw,20px);display:flex;flex-direction:column;gap:28px">
+        <div style="background:#E8F0F7;border-radius:20px;min-height:64px;padding:14px clamp(20px,2vw,36px);display:flex;justify-content:flex-end;align-items:center;gap:clamp(20px,2.6vw,44px);flex-wrap:wrap">
+          <a href="#" style="font:600 16px 'Avenir',sans-serif;color:#2b0a08">Popular searches</a>
+          <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#2b0a08" style-hover="color:#8a2e2a">Shop by character</a>
+          <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#2b0a08" style-hover="color:#8a2e2a">Shop by art form</a>
+          <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#2b0a08" style-hover="color:#8a2e2a">Shop by colour</a>
+        </div>
+        <div style="background:linear-gradient(180deg,#E8F0F7 0%,#DCE8F2 100%);border-radius:32px;padding:clamp(40px,5vw,72px) clamp(24px,4vw,72px) 28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(200px,1.2fr);gap:40px">
+            <div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+              <span style="font:600 20px 'Avenir',sans-serif;color:#2b0a08">Connect with us</span>
+              <div style="display:flex;flex-direction:column;gap:16px">
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Call</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Text (WhatsApp)</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Instagram</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">YouTube</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">LinkedIn</a>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+              <span style="font:600 20px 'Avenir',sans-serif;color:#2b0a08">Order Support</span>
+              <div style="display:flex;flex-direction:column;gap:16px">
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Make a return/Exchange</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Refund/Exchange policy</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Track your order</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Shipping policy</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">International Order policy</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">FAQ's</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Terms</a>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+              <span style="font:600 20px 'Avenir',sans-serif;color:#2b0a08">We are KISSA</span>
+              <div style="display:flex;flex-direction:column;gap:16px">
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Our story</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">The artists</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Collaborations</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Careers</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Media</a>
+                <a href="#" style="font:400 16px 'Avenir',sans-serif;color:#4a2a14" style-hover="color:#8a2e2a">Journal</a>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;gap:24px;min-width:0">
+              <div style="position:relative;width:min(100%,220px);aspect-ratio:3/4;border-radius:12px;overflow:hidden;background:#f1e4c4">
+                <image-slot id="v8-pdp-footer-bag" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Kissa shopping bag"></image-slot>
+              </div>
+              <span style="font:500 12px 'Avenir',sans-serif;letter-spacing:.04em;text-transform:uppercase;color:#4a2a14;text-align:right">© 2026 Kissa. All rights reserved</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+  <sc-if value="{{ saveOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ closeSave }}" style="position:fixed;inset:0;z-index:110;background:rgba(43,10,8,.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:20px">
+      <div onClick="{{ stopClick }}" style="position:relative;width:100%;max-width:620px;background:#ffffff;border-radius:16px;padding:28px 28px 24px;display:flex;flex-direction:column;gap:20px;box-shadow:0 30px 60px rgba(43,10,8,.25)">
+        <button onClick="{{ closeSave }}" aria-label="Close" style="position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;border:0;background:#ececec;color:#1a1a1a;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0" style-hover="background:#dedede"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 3l12 12M15 3L3 15"></path></svg></button>
+        <div style="display:flex;flex-direction:column;gap:8px;padding-right:56px">
+          <span style="font:600 20px 'Avenir',sans-serif;color:#1a1a1a">{{ saveItem.name }}</span>
+          <span style="font:400 16px 'Avenir',sans-serif;color:#6b6b6b">{{ saveItem.price }}</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <span style="font:400 16px 'Avenir',sans-serif;color:#1a1a1a">Size</span>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(76px,1fr));gap:12px">
+            <sc-for list="{{ saveSizes }}" as="sz" hint-placeholder-count="9">
+              <button onClick="{{ sz.pick }}" style="height:56px;border-radius:999px;border:1.5px solid {{ sz.line }};background:{{ sz.bg }};color:{{ sz.ink }};font:500 15px 'Avenir',sans-serif;letter-spacing:.04em;cursor:pointer;transition:background .15s ease,color .15s ease">{{ sz.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <button onClick="{{ addToList }}" style="margin-top:6px;height:64px;border-radius:999px;border:0;background:{{ addBg }};color:#ffffff;font:600 17px 'Avenir',sans-serif;cursor:{{ addCursor }};transition:background .2s ease">{{ addLabel }}</button>
+      </div>
+    </div>
+  </sc-if>
+  <section id="new" data-screen-label="The Drop" style="padding: clamp(20px,2vw,32px) 0 clamp(72px,9vw,140px); display: flex; flex-direction: column; gap: clamp(48px,6vw,96px); scroll-margin-top: 84px; background-color: #F6F6F6">
+    <div style="width:100%;padding:0 clamp(12px,1.4vw,20px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(24px,2.4vw,36px) clamp(8px,.8vw,12px)">
+      <article style="display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative">
+          <div onClick="{{ g1.open }}" style="position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+            <div style="position:absolute;inset:0;background:rgba(254,243,214,.28)"></div>
+            <image-slot id="v8-grid-1" src="assets/drop/manmohini.png" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Drop image — Manmohini"></image-slot>
+            
+            <button aria-label="Save" onClick="{{ g1.save }}" style="position:absolute;top:14px;right:14px;width:44px;height:44px;border:0;background:transparent;color:{{ g1.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:color .2s ease,transform .2s ease" style-hover="transform:translateY(-2px)"><svg width="22" height="28" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+            <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:8px;pointer-events:none">
+              <span style="width:7px;height:7px;border-radius:50%;background:#fef3d6"></span><span style="width:6px;height:6px;border-radius:50%;background:rgba(254,243,214,.75)"></span><span style="width:5px;height:5px;border-radius:50%;background:rgba(254,243,214,.55)"></span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:0 clamp(8px,1vw,24px)">
+            <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+              <span onClick="{{ g1.open }}" style="font:500 15px 'Avenir',sans-serif;color:#2b0a08;cursor:pointer">Manmohini</span><span style="font:400 15px 'Avenir',sans-serif;color:#2b0a08">Rs. 3,500</span>
+              
+            </div>
+            <button aria-label="Add to bag" onClick="{{ g1.open }}" style="width:36px;height:36px;flex:0 0 36px;border:0;background:transparent;color:#2b0a08;font:300 26px/1 'Avenir',sans-serif;cursor:pointer;padding:0" style-hover="color:#8a2e2a">+</button>
+          </div></article>
+        <article style="display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative">
+          <div onClick="{{ g2.open }}" style="position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+            <div style="position:absolute;inset:0;background:rgba(254,243,214,.28)"></div>
+            <image-slot id="v8-grid-2" src="assets/drop/manmohini.png" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Drop image — Ivory Bird Shirt"></image-slot>
+            
+            <button aria-label="Save" onClick="{{ g2.save }}" style="position:absolute;top:14px;right:14px;width:44px;height:44px;border:0;background:transparent;color:{{ g2.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:color .2s ease,transform .2s ease" style-hover="transform:translateY(-2px)"><svg width="22" height="28" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+            <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:8px;pointer-events:none">
+              <span style="width:7px;height:7px;border-radius:50%;background:#fef3d6"></span><span style="width:6px;height:6px;border-radius:50%;background:rgba(254,243,214,.75)"></span><span style="width:5px;height:5px;border-radius:50%;background:rgba(254,243,214,.55)"></span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:0 clamp(8px,1vw,24px)">
+            <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+              <span onClick="{{ g2.open }}" style="font:500 15px 'Avenir',sans-serif;color:#2b0a08;cursor:pointer">Ivory Bird Shirt</span><span style="font:400 15px 'Avenir',sans-serif;color:#2b0a08">Rs. 2,800</span>
+              
+            </div>
+            <button aria-label="Add to bag" onClick="{{ g2.open }}" style="width:36px;height:36px;flex:0 0 36px;border:0;background:transparent;color:#2b0a08;font:300 26px/1 'Avenir',sans-serif;cursor:pointer;padding:0" style-hover="color:#8a2e2a">+</button>
+          </div></article>
+        <article style="display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative">
+          <div onClick="{{ g3.open }}" style="position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+            <div style="position:absolute;inset:0;background:rgba(254,243,214,.28)"></div>
+            <image-slot id="v8-grid-3" src="assets/drop/manmohini.png" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Drop image — Oxblood Lotus Shirt"></image-slot>
+            
+            <button aria-label="Save" onClick="{{ g3.save }}" style="position:absolute;top:14px;right:14px;width:44px;height:44px;border:0;background:transparent;color:{{ g3.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:color .2s ease,transform .2s ease" style-hover="transform:translateY(-2px)"><svg width="22" height="28" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+            <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:8px;pointer-events:none">
+              <span style="width:7px;height:7px;border-radius:50%;background:#fef3d6"></span><span style="width:6px;height:6px;border-radius:50%;background:rgba(254,243,214,.75)"></span><span style="width:5px;height:5px;border-radius:50%;background:rgba(254,243,214,.55)"></span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:0 clamp(8px,1vw,24px)">
+            <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+              <span onClick="{{ g3.open }}" style="font:500 15px 'Avenir',sans-serif;color:#2b0a08;cursor:pointer">Oxblood Lotus Shirt</span><span style="font:400 15px 'Avenir',sans-serif;color:#2b0a08">Rs. 2,800</span>
+              
+            </div>
+            <button aria-label="Add to bag" onClick="{{ g3.open }}" style="width:36px;height:36px;flex:0 0 36px;border:0;background:transparent;color:#2b0a08;font:300 26px/1 'Avenir',sans-serif;cursor:pointer;padding:0" style-hover="color:#8a2e2a">+</button>
+          </div></article>
+        <article style="display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative">
+          <div onClick="{{ g4.open }}" style="position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+            <div style="position:absolute;inset:0;background:rgba(254,243,214,.28)"></div>
+            <image-slot id="v8-grid-4" src="assets/drop/manmohini.png" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Drop image — Indigo Elephant Shirt"></image-slot>
+            
+            <button aria-label="Save" onClick="{{ g4.save }}" style="position:absolute;top:14px;right:14px;width:44px;height:44px;border:0;background:transparent;color:{{ g4.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:color .2s ease,transform .2s ease" style-hover="transform:translateY(-2px)"><svg width="22" height="28" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+            <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:8px;pointer-events:none">
+              <span style="width:7px;height:7px;border-radius:50%;background:#fef3d6"></span><span style="width:6px;height:6px;border-radius:50%;background:rgba(254,243,214,.75)"></span><span style="width:5px;height:5px;border-radius:50%;background:rgba(254,243,214,.55)"></span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:0 clamp(8px,1vw,24px)">
+            <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+              <span onClick="{{ g4.open }}" style="font:500 15px 'Avenir',sans-serif;color:#2b0a08;cursor:pointer">Indigo Elephant Shirt</span><span style="font:400 15px 'Avenir',sans-serif;color:#2b0a08">Rs. 2,800</span>
+              
+            </div>
+            <button aria-label="Add to bag" onClick="{{ g4.open }}" style="width:36px;height:36px;flex:0 0 36px;border:0;background:transparent;color:#2b0a08;font:300 26px/1 'Avenir',sans-serif;cursor:pointer;padding:0" style-hover="color:#8a2e2a">+</button>
+          </div></article>
+        <article style="display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative">
+          <div onClick="{{ g5.open }}" style="position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+            <div style="position:absolute;inset:0;background:rgba(254,243,214,.28)"></div>
+            <image-slot id="v8-grid-5" src="assets/drop/manmohini.png" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Drop image — Turmeric Peacock Shirt"></image-slot>
+            
+            <button aria-label="Save" onClick="{{ g5.save }}" style="position:absolute;top:14px;right:14px;width:44px;height:44px;border:0;background:transparent;color:{{ g5.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:color .2s ease,transform .2s ease" style-hover="transform:translateY(-2px)"><svg width="22" height="28" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+            <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:8px;pointer-events:none">
+              <span style="width:7px;height:7px;border-radius:50%;background:#fef3d6"></span><span style="width:6px;height:6px;border-radius:50%;background:rgba(254,243,214,.75)"></span><span style="width:5px;height:5px;border-radius:50%;background:rgba(254,243,214,.55)"></span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:0 clamp(8px,1vw,24px)">
+            <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+              <span onClick="{{ g5.open }}" style="font:500 15px 'Avenir',sans-serif;color:#2b0a08;cursor:pointer">Turmeric Peacock Shirt</span><span style="font:400 15px 'Avenir',sans-serif;color:#2b0a08">Rs. 2,800</span>
+              
+            </div>
+            <button aria-label="Add to bag" onClick="{{ g5.open }}" style="width:36px;height:36px;flex:0 0 36px;border:0;background:transparent;color:#2b0a08;font:300 26px/1 'Avenir',sans-serif;cursor:pointer;padding:0" style-hover="color:#8a2e2a">+</button>
+          </div></article>
+        <article style="display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative">
+          <div onClick="{{ g6.open }}" style="position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+            <div style="position:absolute;inset:0;background:rgba(254,243,214,.28)"></div>
+            <image-slot id="v8-grid-6" src="assets/drop/manmohini.png" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Drop image — Moonlit Fish Shirt"></image-slot>
+            
+            <button aria-label="Save" onClick="{{ g6.save }}" style="position:absolute;top:14px;right:14px;width:44px;height:44px;border:0;background:transparent;color:{{ g6.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:color .2s ease,transform .2s ease" style-hover="transform:translateY(-2px)"><svg width="22" height="28" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+            <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:8px;pointer-events:none">
+              <span style="width:7px;height:7px;border-radius:50%;background:#fef3d6"></span><span style="width:6px;height:6px;border-radius:50%;background:rgba(254,243,214,.75)"></span><span style="width:5px;height:5px;border-radius:50%;background:rgba(254,243,214,.55)"></span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:0 clamp(8px,1vw,24px)">
+            <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+              <span onClick="{{ g6.open }}" style="font:500 15px 'Avenir',sans-serif;color:#2b0a08;cursor:pointer">Moonlit Fish Shirt</span><span style="font:400 15px 'Avenir',sans-serif;color:#2b0a08">Rs. 2,800</span>
+              
+            </div>
+            <button aria-label="Add to bag" onClick="{{ g6.open }}" style="width:36px;height:36px;flex:0 0 36px;border:0;background:transparent;color:#2b0a08;font:300 26px/1 'Avenir',sans-serif;cursor:pointer;padding:0" style-hover="color:#8a2e2a">+</button>
+          </div></article>
+        <article style="display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative">
+          <div onClick="{{ g7.open }}" style="position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+            <div style="position:absolute;inset:0;background:rgba(254,243,214,.28)"></div>
+            <image-slot id="v8-grid-7" src="assets/drop/manmohini.png" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Drop image — Saffron Sun Shirt"></image-slot>
+            
+            <button aria-label="Save" onClick="{{ g7.save }}" style="position:absolute;top:14px;right:14px;width:44px;height:44px;border:0;background:transparent;color:{{ g7.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:color .2s ease,transform .2s ease" style-hover="transform:translateY(-2px)"><svg width="22" height="28" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+            <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:8px;pointer-events:none">
+              <span style="width:7px;height:7px;border-radius:50%;background:#fef3d6"></span><span style="width:6px;height:6px;border-radius:50%;background:rgba(254,243,214,.75)"></span><span style="width:5px;height:5px;border-radius:50%;background:rgba(254,243,214,.55)"></span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:0 clamp(8px,1vw,24px)">
+            <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+              <span onClick="{{ g7.open }}" style="font:500 15px 'Avenir',sans-serif;color:#2b0a08;cursor:pointer">Saffron Sun Shirt</span><span style="font:400 15px 'Avenir',sans-serif;color:#2b0a08">Rs. 2,800</span>
+              
+            </div>
+            <button aria-label="Add to bag" onClick="{{ g7.open }}" style="width:36px;height:36px;flex:0 0 36px;border:0;background:transparent;color:#2b0a08;font:300 26px/1 'Avenir',sans-serif;cursor:pointer;padding:0" style-hover="color:#8a2e2a">+</button>
+          </div></article>
+        <article style="display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative">
+          <div onClick="{{ g8.open }}" style="position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;cursor:pointer;background:#8a2e2a url(assets/brand/texture-red.png) center/cover">
+            <div style="position:absolute;inset:0;background:rgba(254,243,214,.28)"></div>
+            <image-slot id="v8-grid-8" src="assets/drop/manmohini.png" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" placeholder="Drop image — Rust Chariot Shirt"></image-slot>
+            
+            <button aria-label="Save" onClick="{{ g8.save }}" style="position:absolute;top:14px;right:14px;width:44px;height:44px;border:0;background:transparent;color:{{ g8.markInk }};cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:color .2s ease,transform .2s ease" style-hover="transform:translateY(-2px)"><svg width="22" height="28" viewBox="0 0 22 28" fill="currentColor"><path d="M5 1h12a4 4 0 0 1 4 4v20.6c0 1-1.1 1.6-1.9 1L11.9 21a1.6 1.6 0 0 0-1.8 0l-7.2 5.6c-.8.6-1.9 0-1.9-1V5a4 4 0 0 1 4-4z"></path></svg></button>
+            <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:8px;pointer-events:none">
+              <span style="width:7px;height:7px;border-radius:50%;background:#fef3d6"></span><span style="width:6px;height:6px;border-radius:50%;background:rgba(254,243,214,.75)"></span><span style="width:5px;height:5px;border-radius:50%;background:rgba(254,243,214,.55)"></span>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:0 clamp(8px,1vw,24px)">
+            <div style="display:flex;flex-direction:column;gap:4px;min-width:0">
+              <span onClick="{{ g8.open }}" style="font:500 15px 'Avenir',sans-serif;color:#2b0a08;cursor:pointer">Rust Chariot Shirt</span><span style="font:400 15px 'Avenir',sans-serif;color:#2b0a08">Rs. 2,800</span>
+              
+            </div>
+            <button aria-label="Add to bag" onClick="{{ g8.open }}" style="width:36px;height:36px;flex:0 0 36px;border:0;background:transparent;color:#2b0a08;font:300 26px/1 'Avenir',sans-serif;cursor:pointer;padding:0" style-hover="color:#8a2e2a">+</button>
+          </div></article>
+    </div>
+    <div style="display: flex; justify-content: center; padding: 0 20px; height: 1659px; width: 1718px">
+      <a href="#new" style="display:inline-flex;align-items:center;gap:12px;padding:16px 34px;border:1px solid #4d0b09;border-radius:999px;font:600 13px 'Avenir',sans-serif;letter-spacing:3px;text-transform:uppercase;color:#4d0b09;transition:background .2s ease,color .2s ease" style-hover="background:#4d0b09;color:#fef3d6">Explore the full drop</a>
+    </div>
+  </section><section id="quiz" data-screen-label="Find your Kissa" style="background:#F6F6F6;scroll-margin-top:84px">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,7vw,104px) clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:clamp(32px,5vw,80px);align-items:start">
+      <div style="display:flex;flex-direction:column;gap:22px;max-width:480px">
+        <div style="font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8a2e2a">Find your Kissa</div>
+        <h2 style="margin:0;font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-weight:400;font-size:clamp(38px,4.4vw,64px);line-height:1;color:#4d0b09;text-wrap:balance">Every shirt has a personality. Which one is yours?</h2>
+        <p style="margin:0;font-size:17px;font-weight:300;line-height:1.6;color:#4a2a14;text-wrap:pretty">Four quick questions. We'll match you to the Kissa that tells your story.</p>
+        <sc-if value="{{ inQuiz }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;flex-direction:column;gap:10px;max-width:320px">
+            <div style="font:500 11px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#4d0b09">{{ qLabel }}</div>
+            <div style="height:3px;background:rgba(77,11,9,.15)"><div style="height:100%;width:{{ qPct }};background:#8a2e2a;transition:width .3s"></div></div>
+          </div>
+        </sc-if>
+      </div>
+      <sc-if value="{{ inQuiz }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <h3 style="margin:0;font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-weight:400;font-size:clamp(26px,2.6vw,36px);line-height:1.1;color:#4d0b09">{{ qText }}</h3>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ qOptions }}" as="o" hint-placeholder-count="5">
+              <button onClick="{{ o.pick }}" style="display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;border:1px solid #4d0b09;background:#E8F0F7;color:#2b0a08;padding:18px 22px;font:400 16px 'avenir-lt-pro','Avenir',sans-serif;cursor:pointer;transition:all .15s" style-hover="background:#4d0b09;color:#fef3d6"><span>{{ o.label }}</span><span>→</span></button>
+            </sc-for>
+          </div>
+          <sc-if value="{{ canBack }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ qBack }}" style="align-self:flex-start;border:0;background:transparent;color:#4d0b09;padding:4px 0;font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;border-bottom:1px solid #4d0b09">← Back</button>
+          </sc-if>
+        </div>
+      </sc-if>
+      <sc-if value="{{ quizDone }}" hint-placeholder-val="{{ false }}">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:24px;background:#E8F0F7;padding:clamp(18px,2vw,28px);align-items:center">
+          <div style="position:relative;aspect-ratio:4/5;background:#f3e6c4;overflow:hidden">
+            <image-slot id="{{ result.slot }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" src="{{ result.img }}" placeholder="{{ result.ph }}"></image-slot>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div style="font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8a2e2a">You're</div>
+            <div style="font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-size:clamp(32px,3.4vw,48px);line-height:1;color:#4d0b09">{{ result.persona }}</div>
+            <p style="margin:0;font-size:16px;font-weight:300;line-height:1.6;color:#4a2a14;text-wrap:pretty">{{ result.desc }}</p>
+            <div style="display:flex;justify-content:space-between;gap:12px;font-size:15px;color:#2b0a08;border-top:1px solid rgba(77,11,9,.2);padding-top:12px"><span>{{ result.name }}</span><span>{{ result.price }}</span></div>
+            <div style="font:500 11px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#4d0b09">{{ result.sizeLabel }}</div>
+            <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px">
+              <sc-for list="{{ result.sizes }}" as="sz" hint-placeholder-count="5">
+                <button onClick="{{ sz.pick }}" style="border:1px solid #4d0b09;background:transparent;color:#4d0b09;padding:11px 0;font:500 12px 'avenir-lt-pro','Avenir',sans-serif;cursor:pointer" style-hover="background:#4d0b09;color:#fef3d6">{{ sz.label }}</button>
+              </sc-for>
+            </div>
+            <button onClick="{{ qReset }}" style="align-self:flex-start;border:0;background:transparent;color:#4d0b09;padding:4px 0;font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;border-bottom:1px solid #4d0b09">Retake the quiz</button>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section data-screen-label="Edits" style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,4vw,56px) clamp(56px,7vw,96px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(14px,1.6vw,24px)">
+    <sc-for list="{{ edits }}" as="e" hint-placeholder-count="2">
+      <a href="#" style="position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:{{ e.bg }}" style-hover="color:#fef3d6">
+        <image-slot id="{{ e.slot }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" src="{{ e.img }}" placeholder="{{ e.ph }}"></image-slot>
+        <div style="position:absolute;left:0;right:0;bottom:0;padding:24px;display:flex;justify-content:space-between;align-items:end;gap:16px;background:linear-gradient(180deg,transparent,rgba(43,10,8,.75));color:#fef3d6;pointer-events:none">
+          <span style="font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-size:clamp(26px,2.6vw,38px);line-height:1">{{ e.title }}</span>
+          <span style="font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap">Explore →</span>
+        </div>
+      </a>
+    </sc-for>
+  </section>
+
+  <div style="background:#8a2e2a url(assets/brand/texture-red.png) center/cover;color:#fef3d6;overflow:hidden;white-space:nowrap;padding:18px 0;font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-size:clamp(22px,2.4vw,32px)">{{ midBar }}</div>
+
+  <section id="lab" data-screen-label="Design Lab" style="background:#4d0b09;color:#fef3d6;scroll-margin-top:84px">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,7vw,112px) clamp(20px,4vw,56px);display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px 64px;align-items:end">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div style="font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#f1edc6">The Kissa Design Lab</div>
+          <h2 style="margin:0;font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-weight:400;font-size:clamp(38px,4.4vw,64px);line-height:1">How a pocket gets its plot.</h2>
+        </div>
+        <p style="margin:0;font-size:17px;font-weight:300;line-height:1.65;color:#f1e4c4;max-width:46ch;text-wrap:pretty">From a pencil line to a finished shirt, every Kissa passes through the same four hands-on stages. No prints, no shortcuts.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(16px,2vw,28px)">
+        <sc-for list="{{ labSteps }}" as="st" hint-placeholder-count="4">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#3a0806">
+              <image-slot id="{{ st.slot }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" src="{{ st.img }}" placeholder="{{ st.ph }}"></image-slot>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:12px;border-top:1px solid rgba(254,243,214,.3);padding-top:14px">
+              <span style="font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;color:#f1edc6">{{ st.n }}</span>
+              <span style="font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-size:24px">{{ st.title }}</span>
+            </div>
+            <p style="margin:0;font-size:15px;font-weight:300;line-height:1.6;color:#e9d9b8;text-wrap:pretty">{{ st.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+      <a href="#" style="align-self:flex-start;background:#E8F0F7;color:#4d0b09;padding:17px 34px;font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase" style-hover="background:#8a2e2a;color:#fef3d6">Enter the Design Lab</a>
+    </div>
+  </section>
+
+  <section id="story" data-screen-label="Story" style="background:#502f0c;color:#fef3d6;position:relative;overflow:hidden">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,7vw,112px) clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(28px,4vw,64px);align-items:center">
+      <div style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(12px,1.4vw,20px);align-items:end">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden">
+          <image-slot id="v5-story-a" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" src="assets/v3-artisan.png" placeholder="Artisan at work"></image-slot>
+        </div>
+        <div style="position:relative;aspect-ratio:3/4;overflow:hidden">
+          <image-slot id="v5-story-b" shape="rect" style="position:absolute;inset:0;width:100%;height:100%" src="assets/v3-hand.png" placeholder="Brush close-up"></image-slot>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:24px;max-width:520px">
+        <img src="assets/brand/kissa-hindi-white.png" alt="किस्सा" style="height:56px;width:auto;align-self:flex-start;opacity:.95">
+        <h2 style="margin:0;font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-weight:400;font-size:clamp(36px,4.2vw,60px);line-height:1.02">Painted by hand. One pocket at a time.</h2>
+        <p style="margin:0;font-size:17px;font-weight:300;line-height:1.65;color:#f1e4c4;text-wrap:pretty">Kissa means story. Every pocket is painted by a Nakashi artist in Cheriyal, Telangana, and no two land the same. Variations are part of the painting, and part of the piece.</p>
+        <a href="#" style="align-self:flex-start;background:#E8F0F7;color:#502f0c;padding:17px 34px;font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.22em;text-transform:uppercase" style-hover="background:#8a2e2a;color:#fef3d6">Meet the makers</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="vault" data-screen-label="The Vault" style="background:#F6F6F6;scroll-margin-top:84px">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,7vw,104px) clamp(20px,4vw,56px);display:flex;flex-direction:column;gap:clamp(28px,3.5vw,48px)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px 64px;align-items:end">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div style="font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8a2e2a">The Vault</div>
+          <h2 style="margin:0;font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-weight:400;font-size:clamp(38px,4.4vw,64px);line-height:1;color:#4d0b09">Past stories, sold out.</h2>
+        </div>
+        <p style="margin:0;font-size:17px;font-weight:300;line-height:1.65;color:#4a2a14;max-width:46ch;text-wrap:pretty">Every drop is limited. Once a story sells out, it lives here. Tap notify and we'll tell you if it ever returns.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:clamp(14px,1.6vw,24px)">
+        <sc-for list="{{ vault }}" as="v" hint-placeholder-count="4">
+          <article style="display:flex;flex-direction:column;gap:12px">
+            <div style="position:relative;aspect-ratio:4/5;background:#e8dcc0;overflow:hidden">
+              <image-slot id="{{ v.slot }}" shape="rect" style="position:absolute;inset:0;width:100%;height:100%;filter:grayscale(1) contrast(.95)" placeholder="{{ v.ph }}"></image-slot>
+              <div style="position:absolute;top:10px;left:10px;background:#2b0a08;color:#fef3d6;font:500 10px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;padding:6px 10px;pointer-events:none">Sold out</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <div style="font:500 11px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8a2e2a">{{ v.drop }}</div>
+              <div style="font-size:15px;color:#2b0a08">{{ v.name }}</div>
+            </div>
+            <button onClick="{{ v.toggle }}" style="border:1px solid #4d0b09;background:{{ v.btnBg }};color:{{ v.btnInk }};padding:12px;font:500 11px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;cursor:pointer">{{ v.cta }}</button>
+          </article>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="journal" data-screen-label="Sign up" style="position:relative;overflow:hidden;background:#8a2e2a url(assets/brand/texture-red.png) center/cover;color:#fef3d6">
+    <img src="assets/brand/cheriyal-figure-white.png" alt="" style="position:absolute;right:clamp(-40px,4vw,80px);bottom:-20px;height:min(115%,520px);width:auto;opacity:.9;pointer-events:none">
+    <div style="position:relative;max-width:1440px;margin:0 auto;padding:clamp(64px,9vw,128px) clamp(20px,4vw,56px);display:flex;flex-direction:column;gap:22px">
+      <h2 style="margin:0;font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-weight:400;font-size:clamp(40px,5vw,72px);line-height:.98;max-width:9ch">The Kissa Journal</h2>
+      <p style="margin:0;font-size:16px;line-height:1.55;max-width:32ch;text-wrap:pretty">Stories from the studio, the painters and the next drop. Be first to hear.</p>
+      <sc-if value="{{ notJoined }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ join }}" style="display:flex;max-width:420px;border-bottom:1px solid #fef3d6">
+          <input type="email" required="" placeholder="Email address" style="flex:1;min-width:0;border:0;background:transparent;padding:14px 2px;font:400 15px 'avenir-lt-pro','Avenir',sans-serif;color:#fef3d6;outline:none">
+          <button type="submit" style="border:0;background:transparent;color:#fef3d6;font:500 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.2em;text-transform:uppercase;cursor:pointer">Sign up →</button>
+        </form>
+      </sc-if>
+      <sc-if value="{{ joined }}" hint-placeholder-val="{{ false }}">
+        <p style="margin:0;font-family:'all-round-gothic','avenir-lt-pro',sans-serif;font-size:24px">You're in. Watch your inbox.</p>
+      </sc-if>
+    </div>
+  </section>
+
+  <footer style="background:#4d0b09;color:#fef3d6">
+    <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,7vw,88px) clamp(20px,4vw,56px) 28px;display:flex;flex-direction:column;gap:56px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:40px">
+        <div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px">
+          <img src="assets/brand/mark-cream.png" alt="" style="height:88px;width:auto">
+          <img src="assets/brand/wordmark-cream.png" alt="KISSA" style="width:150px;height:auto">
+          <img src="assets/brand/tagline-cream.png" alt="Part of India's story" style="width:170px;height:auto">
+        </div>
+        <sc-for list="{{ footCols }}" as="col" hint-placeholder-count="3">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="font:500 11px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#f1edc6">{{ col.title }}</div>
+            <sc-for list="{{ col.links }}" as="l" hint-placeholder-count="4">
+              <a href="#" style="font-size:15px;font-weight:300;color:#e9d9b8" style-hover="color:#fef3d6">{{ l }}</a>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(254,243,214,.25);padding-top:22px;font:400 12px 'avenir-lt-pro','Avenir',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#d9c6a4">
+        <span>© 2026 Kissa. Hand-painted in Telangana.</span>
+        <span>Free shipping · COD available</span>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showEditionTags&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;barSpeed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:30,&quot;min&quot;:10,&quot;max&quot;:80,&quot;step&quot;:5,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;slideSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:6,&quot;min&quot;:3,&quot;max&quot;:12,&quot;step&quot;:1,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;}}">
+class Component extends DCLogic {
+  state = { bag: [], joined: false, slide: 0, menuOpen: false, quick: null, q: 0, answers: [], notify: [], resultAdded: '' };
+  railRef = React.createRef();
+  lookRail = React.createRef();
+  componentDidMount() { this._onKey = e => { if (e.key === 'Escape') this.setState({ openLook: null }); }; window.addEventListener('keydown', this._onKey); this._onScroll = () => { const sc = window.scrollY > 40; const hero = document.querySelector('[data-screen-label="Hero"]'); const hr = hero ? hero.getBoundingClientRect() : null; const past = !!hr && hr.height > 0 && window.scrollY > 0 && hr.bottom <= 90; if (sc !== this.state.scrolled || past !== this.state.pastHero) this.setState({ scrolled: sc, pastHero: past }); }; window.addEventListener('scroll', this._onScroll, { passive: true }); window.addEventListener('resize', this._onScroll); window.addEventListener('load', this._onScroll); requestAnimationFrame(() => this._onScroll()); setTimeout(this._onScroll, 300); }
+  componentWillUnmount() { clearInterval(this._t); window.removeEventListener('scroll', this._onScroll); window.removeEventListener('resize', this._onScroll); window.removeEventListener('load', this._onScroll); }
+  startTimer() { clearInterval(this._t); this._t = setInterval(() => this.go(1), (this.props.slideSeconds ?? 6) * 1000); }
+  go(d) { this.setState(s => ({ slide: (s.slide + d + 3) % 3 })); }
+  bar(key, msgs, speed, sep) {
+    const k = key + speed;
+    if (this['_' + key] && this['_' + key + 'k'] === k) return this['_' + key];
+    const h = React.createElement;
+    const run = r => h('div', { key: r, style: { display: 'flex', flexShrink: 0 } },
+      [0, 1, 2, 3].flatMap(i => msgs.map((t, j) => h('span', { key: i + '-' + j, style: { display: 'flex', alignItems: 'center' } },
+        t, h('span', { style: { color: '#f1edc6', padding: '0 1.2em', fontSize: '.6em' } }, sep)))));
+    this['_' + key] = h('div', { style: { display: 'flex', width: 'max-content', animation: `kissa-bar ${speed}s linear infinite` } }, run('a'), run('b'));
+    this['_' + key + 'k'] = k;
+    return this['_' + key];
+  }
+  renderVals() {
+    const { bag, joined, slide, menuOpen, quick, q, answers, notify, resultAdded } = this.state;
+    const SIZES = ['S', 'M', 'L', 'XL', 'XXL'];
+    const addToBag = (id, size) => this.setState(s => ({ bag: [...s.bag, id + '-' + size], quick: null }));
+    const PERSONA = {
+      ck01: ['The Storyteller', 'You start the conversation and end it with a punchline. You collect people, and every one of them becomes a story.'],
+      ck02: ['The Wanderer', 'Always mid-journey. Light on your feet, curious about the next town, happiest with a window seat.'],
+      ck03: ['The Romantic', 'You feel everything first. You keep letters, notice sunsets and mean every word you say.'],
+      ck04: ['The Anchor', 'Calm in any crowd. The friend everyone calls when it really matters.'],
+      ck05: ['The Showstopper', 'You walk in and the room turns. Colour is your love language, and you speak it fluently.'],
+    };
+    const QUIZ = [
+      { q: 'Your ideal Sunday looks like…', o: [['A long lunch where you tell all the stories', 'ck01'], ['A train ticket to somewhere new', 'ck02'], ['Old songs and a handwritten letter', 'ck03'], ['Chai, a book, nowhere to be', 'ck04'], ['A party you somehow end up hosting', 'ck05']] },
+      { q: 'Your friends would call you…', o: [["The one who's been everywhere", 'ck02'], ['The calm in every chaos', 'ck04'], ['The life of the group chat', 'ck01'], ['The one who feels everything', 'ck03'], ['Impossible to miss', 'ck05']] },
+      { q: 'Pick a colour mood', o: [['Deep wine and dusk', 'ck03'], ['Turmeric and gold', 'ck05'], ['Stripes and open sky', 'ck01'], ['Indigo night', 'ck04'], ['Ivory and air', 'ck02']] },
+      { q: "What's in your pocket right now?", o: [['House keys. Always.', 'ck04'], ['A ticket stub from somewhere', 'ck02'], ['Sunglasses, obviously', 'ck05'], ['A note you never sent', 'ck03'], ["A story you can't wait to tell", 'ck01']] },
+    ];
+    const tex = '#8a2e2a url(assets/brand/texture-red.png) center/cover';
+    const fadeL = 'linear-gradient(90deg,transparent 0%,#000 26%)';
+    const slidesData = [
+      { kicker: 'Drop 01 — The Cheriyal Edit', title: "Part of India's story", cta: 'Shop the drop', img: 'assets/brand/hero-mask-wall.png', slot: 'v5-slide-1', ph: 'Hero — Cheriyal mask on red wall', bg: tex, imgW: '100%', fade: 'none' },
+      { kicker: 'No two stories land the same', title: 'Wear the story', cta: 'Shop new in', img: 'assets/v3-couple.png', slot: 'v5-slide-2', ph: 'Hero slide — two models', bg: tex, imgW: 'min(72%,1040px)', fade: fadeL },
+      { kicker: 'Made in Cheriyal, Telangana', title: 'Meet the makers', cta: 'Our story', img: 'assets/v3-artisan.png', slot: 'v5-slide-3', ph: 'Hero slide — artisan painting', bg: '#502f0c', imgW: 'min(60%,880px)', fade: fadeL },
+    ];
+    const items = [
+      { id: 'ck01', name: 'Cheriyal Stripe Shirt', price: '₹2,800', img: 'assets/v3-p1.png', tag: 'Limited edition' },
+      { id: 'ck02', name: 'Ivory Bird Shirt', price: '₹2,800', img: 'assets/v3-p2.png', tag: 'Limited edition' },
+      { id: 'ck03', name: 'Oxblood Lotus Shirt', price: '₹2,800', img: 'assets/v3-p3.png', tag: 'Only few left' },
+      { id: 'ck04', name: 'Indigo Elephant Shirt', price: '₹2,800', img: '', tag: '' },
+      { id: 'ck05', name: 'Turmeric Peacock Shirt', price: '₹2,800', img: '', tag: '' },
+    ];
+    const speed = this.props.barSpeed ?? 30;
+    const showTags = this.props.showEditionTags ?? true;
+    const scroll = d => { const el = this.railRef.current; if (el) el.scrollBy({ left: d * el.clientWidth * 0.8 }); };
+    return {
+      headerBg: 'rgba(254,243,214,.28)',
+      navY: this.state.pastHero ? 'translateY(-100%)' : 'translateY(0)',
+      navOpacity: this.state.pastHero ? 0 : 1,
+      navPE: this.state.pastHero ? 'none' : 'auto',
+      barsY: this.state.scrolled ? 'translateY(0)' : 'translateY(-100%)',
+      barsPE: this.state.scrolled ? 'auto' : 'none',
+      ...(() => {
+        const L = [
+          { code: 'CK-01', persona: 'The Storyteller', name: 'Cheriyal Stripe Shirt', title: 'The mask that tells the story', story: 'In Cheriyal, the storyteller wears a mask to become every character in the tale. This shirt carries that face: the one who starts the conversation and ends it with a punchline.', pocket: 'A hand-painted Cheriyal mask in earth red and turmeric, on a blue stripe.', img: 'assets/v3-hero.png', zimg: 'assets/mask.png', zx: '62%', zy: '58%' },
+          { code: 'CK-02', persona: 'The Wanderer', name: 'Ivory Bird Shirt', title: 'The bird that never stays', story: 'Scroll painters always put a bird at the edge of the scene, halfway out of the frame. This one is for the people who are always mid-journey, window seat, next town.', pocket: 'A single bird in flight, painted on ivory cotton.', img: 'assets/v3-couple.png', zimg: 'assets/pocket.png', zx: '40%', zy: '55%' },
+          { code: 'CK-03', persona: 'The Romantic', name: 'Oxblood Lotus Shirt', title: 'The lotus that opens slowly', story: 'The lotus blooms in the scroll whenever the story turns tender. Deep oxblood, painted slowly, for the ones who feel everything first.', pocket: 'A lotus in bloom, cream and gold on oxblood.', img: 'assets/side.png', zimg: 'assets/v3-p3.png', zx: '55%', zy: '50%' },
+          { code: 'CK-04', persona: 'The Anchor', name: 'Indigo Elephant Shirt', title: 'The elephant that holds the line', story: 'In the scroll, the elephant carries the whole procession on its back and never hurries. For the friend everyone calls when it really matters.', pocket: 'An elephant in indigo and cream, painted slow and steady.', img: '', zimg: '' },
+          { code: 'CK-06', persona: 'The Dreamer', name: 'Moonlit Fish Shirt', title: 'The fish that swims at night', story: 'Scroll painters end the night scenes with a fish in silver water. For the ones who drift off mid-sentence because the idea in their head is better.', pocket: 'A fish in silver and indigo, painted under a crescent moon.', img: '', zimg: '' },
+          { code: 'CK-05', persona: 'The Showstopper', name: 'Turmeric Peacock Shirt', title: 'The peacock that turns the room', story: 'The peacock arrives when the story needs colour. Turmeric, gold and a little too much attitude, for the ones the room turns to.', pocket: 'A peacock in full display, turmeric and gold.', img: '', zimg: '' },
+        ].map((m, i) => ({ ...m, price: '₹2,800', slot: 'v7-model-' + (i + 1), zslot: 'v7-model-zoom-' + (i + 1), ph: 'Model wearing ' + m.name }));
+        const { hoverModel, openLook, lookSize, lookAdded } = this.state;
+        const look = openLook != null ? L[openLook] : L[0];
+        const BADGES = ['Limited edition', '', 'Only few left', '', 'New'];
+        const sc = d => { const el = this.lookRail.current; if (el) { const w = el.clientWidth / 4; const max = el.scrollWidth - el.clientWidth; const at = el.scrollLeft >= max - 2; el.scrollTo({ left: d > 0 ? (at ? 0 : Math.min(max, el.scrollLeft + w * 2)) : Math.max(0, el.scrollLeft - w * 2) }); }; };
+        return {
+          lookRail: this.lookRail, lookPrev: () => sc(-1), lookNext: () => sc(1),
+          models: L.map((m, i) => { const on = hoverModel === i; return { ...m, price: '₹ 2,800', badge: BADGES[i] || '', zOp: on ? 1 : 0, zS: on ? 1 : 1.08,
+            enter: () => this.setState({ hoverModel: i }), leave: () => this.setState({ hoverModel: null }),
+            open: () => this.setState({ openLook: i, lookSize: null, lookAdded: false, hoverModel: null }) }; }),
+          lookOpen: openLook != null, look,
+          closeLook: () => this.setState({ openLook: null }),
+          stopClick: e => e.stopPropagation(),
+          lookSizes: SIZES.map(sz => ({ label: sz, bg: lookSize === sz ? '#4d0b09' : 'transparent', ink: lookSize === sz ? '#fef3d6' : '#4d0b09',
+            pick: () => this.setState({ lookSize: sz, lookAdded: false }) })),
+          addLabel: lookAdded ? 'Added to bag ✓' : lookSize ? 'Add to bag — ' + lookSize : 'Select a size',
+          addOpacity: lookSize ? 1 : 0.55,
+          addLook: () => { if (!lookSize) return; addToBag('look' + openLook, lookSize); this.setState({ lookAdded: true }); },
+        };
+      })(),
+      midBar: this.bar('mid', ['Hand-painted everything', 'Made slowly', "Part of India's story"], speed * 1.4, '✦'),
+      bagCount: bag.length,
+      menuOpen,
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      menuCols: [
+        { title: 'Shop', links: ['New in', 'Shirts', 'Limited edition', 'Shop all'] },
+        { title: 'By motif', links: ['Faces', 'Birds', 'Lotus', 'Elephants'] },
+        { title: 'Kissa', links: ['Find your Kissa', 'Design Lab', 'The Vault', 'Our story'] },
+      ],
+      slides: [slidesData[0]].map(s => ({ ...s, opacity: 1, pe: 'auto' })),
+      slideLabel: `0${slide + 1} / 03`,
+      prev: () => { this.go(-1); this.startTimer(); },
+      next: () => { this.go(1); this.startTimer(); },
+      railRef: this.railRef,
+      railLeft: () => scroll(-1), railRight: () => scroll(1),
+      ...(() => {
+        const names = ['Manmohini','Ivory Bird Shirt','Oxblood Lotus Shirt','Indigo Elephant Shirt','Turmeric Peacock Shirt','Moonlit Fish Shirt','Saffron Sun Shirt','Rust Chariot Shirt'];
+        const saved = this.state.savedList || {};
+        const so = this.state.saveOpen, ss = this.state.saveSize;
+        const srcs = names.map(() => 'assets/drop/manmohini.png');
+        const prices = names.map((n, i) => i === 0 ? 'Rs. 3,500' : 'Rs. 2,800');
+        const po = this.state.pdpOpen, pi = this.state.pdpImg || 0, ps = this.state.pdpSize, pa = this.state.pdpAcc;
+        const views = ['Front', 'Pocket close-up', 'Back', 'Detail'];
+        const slotFor = k => k === 0 ? 'v8-grid-' + (po + 1) : 'v8-pdp-' + (po + 1) + '-' + k;
+        this.pdpRef = this.pdpRef || React.createRef();
+        const openP = i => { this.setState(st => ({ pdpOpen: i, pdpSize: null, pdpAcc: 2, pdpAdded: false, pdpNeed: false, recent: [i, ...(st.recent || []).filter(x => x !== i)].slice(0, 8) })); document.body.style.overflow = 'hidden'; if (this.pdpRef.current) this.pdpRef.current.scrollTop = 0; };
+        const mini = i => ({ name: names[i], price: prices[i], src: srcs[i] || '', slot: 'v8-mini-' + (i + 1),
+          markInk: saved[i] ? '#4d0b09' : 'rgba(254,243,214,.85)', open: () => openP(i),
+          save: ev => { ev.stopPropagation(); this.setState({ saveOpen: i, saveSize: saved[i] || null }); } });
+        const closePdp = () => { this.setState({ pdpOpen: null }); document.body.style.overflow = ''; };
+        const soldOut = ['XXS', 'M', 'L', 'XXL', 'XXXL'];
+        const recent = this.state.recent || [];
+        const tabs = [
+          ['Details & Description', ['Placeholder — the story behind this pocket.', 'Hand-painted by Cheriyal artisans.', 'Limited run of 50 pieces.']],
+          ['Washcare', ['Hand wash cold, inside out.', 'Do not iron on the painted pocket.', 'Dry in shade.']],
+          ['Shipping', ['Packed within 24 hours.', 'Free delivery pan-India.', 'Dispatches next day.']]
+        ];
+        const acc = [
+          ['Description', 'Placeholder — the story behind this pocket, the painter, and the character it carries.'],
+          ['Fabric & care', 'Placeholder — 100% cotton. Hand wash cold, inside out. Do not iron on the painted pocket.'],
+          ['Shipping & returns', 'Placeholder — ships in 5–7 days across India. Exchanges within 7 days of delivery.']
+        ];
+        const close = () => this.setState({ saveOpen: null, saveSize: null });
+        const o = {
+          dropGrid: names.map((n, i) => ({ name: n, price: prices[i],
+            open: () => openP(i), slot: 'v8-grid-' + (i + 1), ph: 'Garment flat — ' + n, src: srcs[i] || '',
+            markInk: saved[i] ? '#4d0b09' : 'rgba(43,10,8,.38)',
+            save: e => { e.preventDefault(); e.stopPropagation(); this.setState({ saveOpen: i, saveSize: saved[i] || null }); } })),
+          saveOpen: so != null,
+          saveItem: so != null ? { name: names[so], price: prices[so] } : { name: '', price: '' },
+          saveSizes: ['XXXS','XXS','XS','S','M','L','XL','XXL','XXXL'].map(l => ({ label: l,
+            bg: ss === l ? '#1a1a1a' : '#ffffff', ink: ss === l ? '#ffffff' : '#1a1a1a', line: ss === l ? '#1a1a1a' : '#e2e2e2',
+            pick: () => this.setState({ saveSize: l }) })),
+          addBg: ss ? '#000000' : '#9a9a9a', addCursor: ss ? 'pointer' : 'not-allowed',
+          addLabel: ss ? 'Add To List' : 'Select a size',
+          addToList: () => { if (!ss) return; this.setState({ savedList: { ...saved, [so]: ss }, saveOpen: null, saveSize: null }); },
+          closeSave: close,
+          pdpOpen: po != null,
+          pdpPocket: po != null ? { slot: 'v8-pdp-' + (po + 1) + '-pocket', hi: po === 0 ? 'मनमोहिनी' : names[po] } : { slot: 'v8-pdp-x-pocket', hi: '' },
+          pdpStory: { id: 'v8-story-' + ((po ?? 0) + 1) },
+          toStory: ev => { ev.preventDefault(); const el = this.pdpRef.current; const t = el && el.querySelector('#pdp-story'); if (el && t) el.scrollTo({ top: t.offsetTop - 86, behavior: 'smooth' }); },
+          pdpRef: this.pdpRef,
+          pdp: po != null ? { name: names[po], price: prices[po] } : { name: '', price: '' },
+          pdpMain: po != null ? { slot: 'v8-pdp-' + (po + 1) + '-look', src: srcs[po] || '', ph: 'Hero look — ' + names[po] } : { slot: 'v8-pdp-x', src: '', ph: '' },
+          pdpAngles: po != null ? views.map((v, k) => ({ slot: 'v8-pdp-' + (po + 1) + '-' + (k + 1), src: srcs[po] || '', ph: v + ' — ' + names[po] })) : [],
+          pdpMarkInk: po != null && saved[po] ? '#4d0b09' : 'rgba(43,10,8,.4)',
+          pdpSizes: ['XXXS','XXS','XS','S','M','L','XL','XXL','XXXL'].map(l => { const out = soldOut.includes(l), on = ps === l; return { label: l,
+            bg: on ? '#4d0b09' : out ? 'rgba(77,11,9,.08)' : '#fffaf0', ink: on ? '#fef3d6' : out ? 'rgba(43,10,8,.4)' : '#2b0a08',
+            line: on ? '#4d0b09' : out ? 'transparent' : 'rgba(77,11,9,.2)', deco: out ? 'line-through' : 'none', cursor: out ? 'not-allowed' : 'pointer',
+            pick: () => { if (!out) this.setState({ pdpSize: l, pdpAdded: false, pdpNeed: false }); } }; }),
+          pdpAddLabel: this.state.pdpAdded ? 'Added' : 'Add to bag',
+          pdpNeedSize: !!this.state.pdpNeed,
+          pdpAdd: () => ps ? this.setState({ pdpAdded: true }) : this.setState({ pdpNeed: true }),
+          pdpSave: () => this.setState({ saveOpen: po, saveSize: saved[po] || ps || null }),
+          pdpTabs: tabs.map(([t], k) => ({ title: t, ink: pa === k ? '#2b0a08' : 'rgba(43,10,8,.55)', line: pa === k ? '#8a2e2a' : 'rgba(77,11,9,.15)', pick: () => this.setState({ pdpAcc: k }) })),
+          pdpTabBody: (tabs[pa] || tabs[0])[1].map(t => ({ t })),
+          pdpLike: po != null ? [1, 2, 3, 4].map(d => mini((po + d) % names.length)) : [],
+          pdpRecent: recent.filter(i => i !== po).slice(0, 4).map(mini),
+          hasRecent: recent.filter(i => i !== po).length > 0,
+          closePdp,
+          goHome: ev => { ev.preventDefault(); this.setState({ pdpOpen: null, saveOpen: null, menuOpen: false }); document.body.style.overflow = ''; window.scrollTo({ top: 0, behavior: 'smooth' }); },
+        };
+        o.dropGrid.forEach((g, i) => { o['g' + (i + 1)] = g; });
+        return o;
+
+      })(),
+      products: items.map((p, i) => ({
+        ...p, slot: 'v5-prod-' + (i + 1), ph: 'Product shot — ' + p.name,
+        tag: showTags ? p.tag : '',
+        persona: PERSONA[p.id][0],
+        cta: bag.some(b => b.startsWith(p.id + '-')) ? 'In bag ✓ · Add another' : 'Quick add',
+        quickOpen: quick === p.id, quickClosed: quick !== p.id,
+        openQuick: () => this.setState({ quick: p.id }),
+        sizes: SIZES.map(sz => ({ label: sz, pick: () => addToBag(p.id, sz) })),
+      })),
+      closeQuick: () => this.setState({ quick: null }),
+      inQuiz: q < QUIZ.length, quizDone: q >= QUIZ.length, canBack: q > 0 && q < QUIZ.length,
+      qLabel: 'Question ' + Math.min(q + 1, QUIZ.length) + ' of ' + QUIZ.length,
+      qPct: (Math.min(q, QUIZ.length) / QUIZ.length * 100) + '%',
+      qText: q < QUIZ.length ? QUIZ[q].q : '',
+      qOptions: q < QUIZ.length ? QUIZ[q].o.map(([label, id]) => ({ label, pick: () => this.setState(s => ({ answers: [...s.answers.slice(0, s.q), id], q: s.q + 1, resultAdded: '' })) })) : [],
+      qBack: () => this.setState(s => ({ q: Math.max(0, s.q - 1) })),
+      qReset: () => this.setState({ q: 0, answers: [], resultAdded: '' }),
+      result: (() => {
+        const tally = {}; answers.forEach(a => tally[a] = (tally[a] || 0) + 1);
+        const id = answers.length ? answers.reduce((best, a) => tally[a] > tally[best] ? a : best, answers[0]) : 'ck01';
+        const p = items.find(x => x.id === id);
+        return { ...p, persona: PERSONA[id][0], desc: PERSONA[id][1], slot: 'v6-quiz-' + id, ph: 'Product shot — ' + p.name,
+          sizeLabel: resultAdded ? 'Added to bag in ' + resultAdded + ' ✓' : 'Add to bag — pick a size',
+          sizes: SIZES.map(sz => ({ label: sz, pick: () => { addToBag(id, sz); this.setState({ resultAdded: sz }); } })) };
+      })(),
+      labSteps: [
+        { n: '01', title: 'The sketch', text: 'Every story starts as a pencil line, drawn from the Cheriyal scroll tradition.', img: '', slot: 'v6-lab-1', ph: 'Pencil sketch of a pocket story' },
+        { n: '02', title: 'The palette', text: 'Colours are mixed in small batches, so every run carries its own tone.', img: 'assets/v3-hand.png', slot: 'v6-lab-2', ph: 'Paint pots / mixing colours' },
+        { n: '03', title: 'The paint', text: 'A Nakashi artist paints each pocket by hand. One brush, one pocket.', img: 'assets/v3-artisan.png', slot: 'v6-lab-3', ph: 'Artist painting a pocket' },
+        { n: '04', title: 'The stitch', text: 'The painted pocket is set onto the shirt and finished with care.', img: 'assets/v3-folded.png', slot: 'v6-lab-4', ph: 'Finished folded shirt' },
+      ],
+      vault: [
+        { id: 'v1', drop: 'Drop 00 · 2025', name: 'Monsoon Fish Shirt' },
+        { id: 'v2', drop: 'Drop 00 · 2025', name: 'Sun Chariot Shirt' },
+        { id: 'v3', drop: 'Drop 00 · 2025', name: 'Village Fair Shirt' },
+        { id: 'v4', drop: 'Drop 00 · 2025', name: 'Saffron Parrot Shirt' },
+      ].map((v, i) => { const on = notify.includes(v.id); return { ...v, slot: 'v6-vault-' + (i + 1), ph: 'Archive shot — ' + v.name,
+        cta: on ? "We'll tell you ✓" : 'Notify me if it returns', btnBg: on ? '#4d0b09' : 'transparent', btnInk: on ? '#fef3d6' : '#4d0b09',
+        toggle: () => this.setState(s => ({ notify: on ? s.notify.filter(x => x !== v.id) : [...s.notify, v.id] })) }; }),
+      edits: [
+        { title: 'The Cheriyal Edit', img: 'assets/v3-hero.png', slot: 'v5-edit-1', ph: 'Collection image', bg: '#8a2e2a' },
+        { title: 'Pocket Stories', img: 'assets/v3-folded.png', slot: 'v5-edit-2', ph: 'Collection image', bg: '#502f0c' },
+      ],
+      footCols: [
+        { title: 'Information', links: ['Our story', 'Design Lab', 'The Vault', 'Find your Kissa', 'Privacy policy'] },
+        { title: 'Support', links: ['FAQs', 'Shipping', 'Size guide', 'Returns', 'Contact'] },
+        { title: 'Social', links: ['Instagram', 'YouTube', 'Pinterest'] },
+      ],
+      joined, notJoined: !joined,
+      join: e => { e.preventDefault(); this.setState({ joined: true }); },
+    };
+  }
+}
+</script>
+</body>
+</html>
